@@ -1,7 +1,7 @@
-module github.com/bep/gallerydeluxe/exampleSite
+module github.com/toozej/gallerydeluxe/exampleSite
 
 go 1.19
 
-require github.com/bep/gallerydeluxe_starter v0.0.0-20230920153932-f3090f96b66b // indirect
+replace github.com/toozej/gallerydeluxe => ../
 
-replace github.com/bep/gallerydeluxe => ../
+require github.com/bep/gallerydeluxe_starter v0.0.0-20241010094218-1674c368ddfd // indirect

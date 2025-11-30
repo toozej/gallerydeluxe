@@ -1,5 +1,6 @@
 {{/* 20, 100, 250, and 500 height */}}
-{{ $full := . }}
+{{ $oriented := . | images.Filter images.AutoOrient }}
+{{ $full := $oriented }}
 {{ with site.Params.gallerydeluxe.watermark }}
   {{ $opts := . }}
   {{ with resources.Get .image }}
@@ -35,10 +36,10 @@
 {{ end }}
 {{ $m := dict
   "full" $full
-  "20"  (.Resize "x20")
-  "100" (.Resize "x100")
-  "250" (.Resize "x250")
-  "500" (.Resize "x500")
+  "20"  ($oriented.Resize "x20")
+  "100" ($oriented.Resize "x100")
+  "250" ($oriented.Resize "x250")
+  "500" ($oriented.Resize "x500")
 }}
 
 {{ return $m }}
