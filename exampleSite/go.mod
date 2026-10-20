@@ -4,4 +4,7 @@ go 1.19
 
 replace github.com/toozej/gallerydeluxe => ../
 
-require github.com/bep/gallerydeluxe_starter v0.0.0-20241010094218-1674c368ddfd // indirect
+require (
+	github.com/bep/gallerydeluxe_starter v0.0.0-20241010094218-1674c368ddfd // indirect
+	github.com/toozej/gallerydeluxe v0.16.0 // indirect
+)

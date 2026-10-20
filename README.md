@@ -9,6 +9,8 @@
 
 A Hugo Module to show a photo gallery. It's very fast/effective, especially if you have lots of images on display.
 
+Requires Hugo v0.168.0 or later.
+
 This theme is what you see on [staticbattery.com](https://staticbattery.com/) which, at the time of writing this, [scores 100](https://pagespeed.web.dev/report?url=https%3A%2F%2Fstaticbattery.com%2F&form_factor=mobile) at Google PageSpeed for both mobile and desktop.
 
 [<img src="https://raw.githubusercontent.com/bep/gallerydeluxe/main/images/tn.jpg">](https://staticbattery.com/)
@@ -30,7 +32,7 @@ The recommended way to add this to your site is to include it as a Hugo Module. 
         reverse = false
 
          # Enable Exif data in the gallery.
-         # See https://gohugo.io/content-management/image-processing/#exif-data for how to filter tags.
+         # See https://gohugo.io/configuration/imaging/#meta-method for how to filter tags.
         enable_exif = false
 
           # Optional watermark file for the large images.
@@ -40,7 +42,7 @@ The recommended way to add this to your site is to include it as a Hugo Module. 
             posy  = "bottom"                  # one of "top", "center", "bottom"
 ```
 
-If you want full control over how your images gets created, create and adjust a copy of [layouts/partials/gallerydeluxe/create-thumbs.html](layouts/partials/gallerydeluxe/create-thumbs.html) into your own project.
+If you want full control over how your images gets created, create and adjust a copy of [layouts/_partials/gallerydeluxe/create-thumbs.html](layouts/_partials/gallerydeluxe/create-thumbs.html) into your own project.
 
 
 ## Credits
